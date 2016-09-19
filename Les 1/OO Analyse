@@ -1,0 +1,32 @@
+-	Welke objecten spelen volgens jou een rol?
+De cirkels
+Cirkelspawner
+
+
+
+-	Wat zijn de attributen (Variabelen) van die objecten?
+Iets om de richting van de cirkels te bepalen
+Iets om de glow van de cirkels te bepalen
+De plek waar de cirkel wordt gespawned
+
+-	Wat voor gedrag moeten die objecten hebben?
+Bewegingsrichting
+Kleur
+Transparacy
+Destroy
+Radius
+
+Maak C++ classes voor de objecten die je bedacht hebt.
+Particle emitter
+circleSpawner
+	Direction: float // specify target
+	Circle[]
+circle(Superclass)
+Kleur: String
+Radius: float
+Glow(outline): float
+Speed: float
+Destroy:
+Transparancy: float
+redCircle(Polymorphism)
+blueCircle(Polymorphism)
