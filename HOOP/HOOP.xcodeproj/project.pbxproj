@@ -10,6 +10,7 @@
 		B812EE461D86B4FD00700485 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B812EE3F1D86B4FD00700485 /* ofApp.cpp */; };
 		B812EE481D86B4FD00700485 /* Particle2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B812EE431D86B4FD00700485 /* Particle2.cpp */; };
 		B812EE4A1D86B54C00700485 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B812EE491D86B54C00700485 /* main.cpp */; };
+		B8BB130D1D92637800941371 /* squaredParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8BB130B1D92637800941371 /* squaredParticle.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,8 @@
 		B812EE431D86B4FD00700485 /* Particle2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle2.cpp; sourceTree = "<group>"; };
 		B812EE441D86B4FD00700485 /* Particle2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Particle2.hpp; sourceTree = "<group>"; };
 		B812EE491D86B54C00700485 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../../../../../../../Downloads/of_v0.9.3_osx_release/apps/myApps/emptyExample/src/main.cpp; sourceTree = "<group>"; };
+		B8BB130B1D92637800941371 /* squaredParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = squaredParticle.cpp; sourceTree = "<group>"; };
+		B8BB130C1D92637800941371 /* squaredParticle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = squaredParticle.hpp; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* HOOPDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HOOPDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				B812EE401D86B4FD00700485 /* ofApp.h */,
 				B812EE431D86B4FD00700485 /* Particle2.cpp */,
 				B812EE441D86B4FD00700485 /* Particle2.hpp */,
+				B8BB130B1D92637800941371 /* squaredParticle.cpp */,
+				B8BB130C1D92637800941371 /* squaredParticle.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -211,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B812EE481D86B4FD00700485 /* Particle2.cpp in Sources */,
+				B8BB130D1D92637800941371 /* squaredParticle.cpp in Sources */,
 				B812EE461D86B4FD00700485 /* ofApp.cpp in Sources */,
 				B812EE4A1D86B54C00700485 /* main.cpp in Sources */,
 			);

@@ -2,6 +2,8 @@
 
 #include "ofMain.h"
 #include "Particle2.hpp"
+#include "squaredParticle.hpp"
+
 
 class ofApp : public ofBaseApp{
 
@@ -12,7 +14,10 @@ class ofApp : public ofBaseApp{
 
 		void keyPressed(int key);
     
-    Particle part1;
+        void setRandomColour(Particle* particle);
+    
+        Particle part1;
+        squaredParticle part2;
     
     
     

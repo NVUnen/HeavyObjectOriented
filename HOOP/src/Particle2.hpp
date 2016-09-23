@@ -19,4 +19,6 @@ public:
     void move();
     void draw();
     
+    void setColours(ofColor center, ofColor inner, ofColor outer);
+    
 };
