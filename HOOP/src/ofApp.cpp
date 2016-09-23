@@ -5,6 +5,7 @@ void ofApp::setup(){
     ofBackground(ofColor::black);
     part1 = Particle();
     part2 = squaredParticle();
+    emitter = particleEmitter();
     
 
 }
@@ -13,6 +14,7 @@ void ofApp::setup(){
 void ofApp::update(){
     part1.move();
     part2.move();
+    emitter.move();
 
 }
 
@@ -20,6 +22,7 @@ void ofApp::update(){
 void ofApp::draw(){
     part1.draw();
     part2.draw();
+    emitter.draw();
 
 }
 

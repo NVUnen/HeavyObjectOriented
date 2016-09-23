@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "Particle2.hpp"
 #include "squaredParticle.hpp"
+#include "particleEmitter.hpp"
 
 
 class ofApp : public ofBaseApp{
@@ -18,8 +19,6 @@ class ofApp : public ofBaseApp{
     
         Particle part1;
         squaredParticle part2;
-    
-    
-    
+        particleEmitter emitter;
 		
 };
