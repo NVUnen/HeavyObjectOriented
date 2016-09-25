@@ -2,7 +2,7 @@
 
 
 #include "ofMain.h"
-#include "Particle2.hpp"
+#include "Particle.hpp"
 
 class squaredParticle : public Particle {
 public:

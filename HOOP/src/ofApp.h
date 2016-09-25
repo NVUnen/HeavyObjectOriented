@@ -1,24 +1,28 @@
 #pragma once
 
 #include "ofMain.h"
-#include "Particle2.hpp"
-#include "squaredParticle.hpp"
+#include "Particle.hpp"
 #include "particleEmitter.hpp"
 
+#define MAX_PARTICLES 50
 
-class ofApp : public ofBaseApp{
-
-	public:
-		void setup();
-		void update();
-		void draw();
-
-		void keyPressed(int key);
+class ofApp : public ofBaseApp {
     
-        void setRandomColour(Particle* particle);
+public:
+    void setup();
     
-        Particle part1;
-        squaredParticle part2;
-        particleEmitter emitter;
-		
+    void update();
+    
+    void draw();
+    
+    void keyPressed(int key);
+    
+    //void setRandomColour(Particle* particle);
+    
+    particleEmitter part1;
+    
+    void particleEmitter();
+    
+private:
+   // Particle* particles[MAX_PARTICLES];
 };
