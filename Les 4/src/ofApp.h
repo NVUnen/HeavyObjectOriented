@@ -1,24 +1,23 @@
 #pragma once
 
 #include "ofMain.h"
+#include "Particle.h"
+#include "ParticleEmitter.hpp"
 
-class ofApp : public ofBaseApp{
+#define MAX_PARTICLES 20
 
-	public:
-		void setup();
-		void update();
-		void draw();
-
-		void keyPressed(int key);
-		void keyReleased(int key);
-		void mouseMoved(int x, int y );
-		void mouseDragged(int x, int y, int button);
-		void mousePressed(int x, int y, int button);
-		void mouseReleased(int x, int y, int button);
-		void mouseEntered(int x, int y);
-		void mouseExited(int x, int y);
-		void windowResized(int w, int h);
-		void dragEvent(ofDragInfo dragInfo);
-		void gotMessage(ofMessage msg);
-		
+class ofApp : public ofBaseApp {
+    
+public:
+    void setup();
+    
+    void update();
+    
+    void draw();
+    
+    vector<Particle*> particles;
+    
+    ParticleEmitter emitter1;
+    ParticleEmitter emitter2;
+    ParticleEmitter emitter3;
 };
