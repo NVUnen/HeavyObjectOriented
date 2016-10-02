@@ -8,7 +8,7 @@ void ofApp::setup() {
     emitter1.setCurvingParticleRatio(0.1);
     emitter1.setColours(ofColor(31, 127, 255, 127), ofColor(128, 255, 255, 15));
     
-    emitter2 = ParticleEmitter();
+    emitter2= ParticleEmitter();
     emitter2.setOrigin(ofGetWidth() - 100, ofGetHeight() - 100);
     emitter2.setCurvingParticleRatio(0.8);
     emitter2.setColours(ofColor(227, 47, 27, 127), ofColor(247, 140, 129, 15));

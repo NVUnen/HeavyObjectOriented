@@ -1,9 +1,11 @@
 #include "ColoredParticle.hpp"
 
 ColoredParticle::ColoredParticle(int startX, int startY) : Particle(startX, startY) {
-    curve = ofVec2f(ofRandom(-5, 5),
-                    ofRandom(-5, 5));
+    curve = ofVec2f(ofRandom(0, 10),
+                    ofRandom(0, 10));
     
+    speed = ofVec2f(ofRandom(2, 10),
+                    ofRandom(2, 10));
     
 }
 

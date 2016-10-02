@@ -11,5 +11,7 @@ public:
     void move();
     
     ofVec2f curve;
+    ofVec2f speed;
+    float radius;
 
 };
