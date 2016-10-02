@@ -19,7 +19,7 @@ public:
     
     //void setRandomColour(Particle* particle);
     
-    particleEmitter part1;
+    particleEmitter emitter;
     
     void particleEmitter();
     
