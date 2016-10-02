@@ -5,19 +5,12 @@
 Particle* ParticleEmitter::emit() {
     Particle* newParticle;
     
-    if (ofRandom(1) > (1 - curvingParticleRatio))
-    {
+    if (ofRandom(1) > (1 - curvingParticleRatio)) {
         newParticle = new CurvingParticle(originX, originY);
-    }
-        else if (ofRandom(1) > (1 - curvingParticleRatio))
-    {
+        newParticle = new ColoredParticle(originX, originY);
+    } else {
         newParticle = new Particle(originX, originY);
     }
-        else (ofRandom(1) > (1 - curvingParticleRatio));
-    {
-        newParticle = new ColoredParticle(originX, originY);
-    }
-    
     newParticle->setColours(ofColor::white, inner, outer);
     
     return newParticle;

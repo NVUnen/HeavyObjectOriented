@@ -9,11 +9,7 @@ public:
     ColoredParticle(int startX, int startY);
     
     void move();
-    void draw();
     
     ofVec2f curve;
-    ofVec2f speed;
-    
-    ofColor innerColour;
-    ofColor outerColour;
+
 };

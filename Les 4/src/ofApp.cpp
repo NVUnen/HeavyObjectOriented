@@ -15,12 +15,12 @@ void ofApp::setup() {
     
     emitter3 = ParticleEmitter();
     emitter3.setOrigin(400, 400);
-    emitter3.setCurvingParticleRatio(0.8);
-    emitter3.setColours(ofColor(227, 47, 27, 127), ofColor(247, 140, 129, 15));
+    emitter3.setCurvingParticleRatio(2);
+    emitter3.setColours(ofColor(100, 200, 59, 90), ofColor(100, 255, 1, 15));
 }
 
 void ofApp::update() {
-    for (int i = 0; i < MAX_PARTICLES; ++i) {
+    for (int i = 0; i < particles.size(); ++i) {
         particles[i]->move();
     }
     

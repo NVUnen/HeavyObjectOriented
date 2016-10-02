@@ -4,8 +4,6 @@
 #include "Particle.h"
 #include "ParticleEmitter.hpp"
 
-#define MAX_PARTICLES 20
-
 class ofApp : public ofBaseApp {
     
 public:
