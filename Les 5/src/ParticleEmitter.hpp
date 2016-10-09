@@ -1,7 +1,7 @@
 #pragma once
 
 
-#include "Particle.h"
+#include "Particle.hpp"
 
 class ParticleEmitter {
 public:
@@ -11,9 +11,12 @@ public:
     
     void setColours(ofColor innerColour, ofColor outerColor);
     
+    void setLifetime(long time);
+    
     Particle* emit();
     
 private:
+    long lifetime;
     int originX;
     int originY;
     float curvingParticleRatio;

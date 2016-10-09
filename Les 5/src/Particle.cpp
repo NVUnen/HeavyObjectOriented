@@ -1,9 +1,11 @@
 #include "Particle.h"
 
-Particle::Particle(int startX, int startY) {
+Particle::Particle(int startX, int startY, long lifespan) {
     radius = ofRandom(30, 50);
     position = ofPoint(startX,
                        startY);
+    
+    lifetime = lifespan;
     
     
     speed = ofVec2f(ofRandom(-5, 5),
@@ -33,4 +35,12 @@ void Particle::draw() {
     
     ofSetColor(centerColour);
     ofDrawCircle(position.x, position.y, radius * 0.25);
+}
+
+void Particle::updateLifetime(){
+    lifetime -=1;
+    if(lifetime == 0){
+        cout << "lifetime = 0"
+        
+    }
 }

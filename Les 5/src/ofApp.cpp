@@ -22,7 +22,14 @@ void ofApp::setup() {
 void ofApp::update() {
     for (int i = 0; i < particles.size(); ++i) {
         particles[i]->move();
+        particle[i]->updateLifetime();
     }
+    
+    for (vector<Particle>::iterator i = particles.begin();i != particles.end();i++) {
+        i->move();
+        i->UpdateLifetime();
+    }
+    
     
     Particle* freshParticle = emitter1.emit();
     particles.push_back(freshParticle);

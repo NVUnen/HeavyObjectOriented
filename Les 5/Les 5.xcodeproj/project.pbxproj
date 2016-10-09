@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8CBB1111DA24C20004EF371 /* CurvingParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8CBB10F1DA24C20004EF371 /* CurvingParticle.cpp */; };
-		B8CBB1141DA24C42004EF371 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8CBB1121DA24C42004EF371 /* Particle.cpp */; };
-		B8CBB1171DA24C6C004EF371 /* ParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8CBB1151DA24C6C004EF371 /* ParticleEmitter.cpp */; };
-		B8CBB11A1DA24C76004EF371 /* ColoredParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8CBB1181DA24C76004EF371 /* ColoredParticle.cpp */; };
+		B8224BBC1DAA5FC700796BBE /* ParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8224BBA1DAA5FC700796BBE /* ParticleEmitter.cpp */; };
+		B8224BBF1DAA5FFC00796BBE /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8224BBD1DAA5FFC00796BBE /* Particle.cpp */; };
+		B8224BC21DAA615B00796BBE /* CurvingParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8224BC01DAA615B00796BBE /* CurvingParticle.cpp */; };
+		B8224BC51DAA641100796BBE /* ParticleReaper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8224BC31DAA641100796BBE /* ParticleReaper.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
@@ -46,14 +46,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B8CBB10F1DA24C20004EF371 /* CurvingParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CurvingParticle.cpp; sourceTree = "<group>"; };
-		B8CBB1101DA24C20004EF371 /* CurvingParticle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CurvingParticle.hpp; sourceTree = "<group>"; };
-		B8CBB1121DA24C42004EF371 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
-		B8CBB1131DA24C42004EF371 /* Particle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
-		B8CBB1151DA24C6C004EF371 /* ParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEmitter.cpp; sourceTree = "<group>"; };
-		B8CBB1161DA24C6C004EF371 /* ParticleEmitter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParticleEmitter.hpp; sourceTree = "<group>"; };
-		B8CBB1181DA24C76004EF371 /* ColoredParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColoredParticle.cpp; sourceTree = "<group>"; };
-		B8CBB1191DA24C76004EF371 /* ColoredParticle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ColoredParticle.hpp; sourceTree = "<group>"; };
+		B8224BBA1DAA5FC700796BBE /* ParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEmitter.cpp; sourceTree = "<group>"; };
+		B8224BBB1DAA5FC700796BBE /* ParticleEmitter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParticleEmitter.hpp; sourceTree = "<group>"; };
+		B8224BBD1DAA5FFC00796BBE /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		B8224BBE1DAA5FFC00796BBE /* Particle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Particle.hpp; sourceTree = "<group>"; };
+		B8224BC01DAA615B00796BBE /* CurvingParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CurvingParticle.cpp; sourceTree = "<group>"; };
+		B8224BC11DAA615B00796BBE /* CurvingParticle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CurvingParticle.hpp; sourceTree = "<group>"; };
+		B8224BC31DAA641100796BBE /* ParticleReaper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleReaper.cpp; sourceTree = "<group>"; };
+		B8224BC41DAA641100796BBE /* ParticleReaper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ParticleReaper.hpp; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* Les 5Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Les 5Debug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
@@ -117,14 +117,14 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
-				B8CBB10F1DA24C20004EF371 /* CurvingParticle.cpp */,
-				B8CBB1101DA24C20004EF371 /* CurvingParticle.hpp */,
-				B8CBB1121DA24C42004EF371 /* Particle.cpp */,
-				B8CBB1131DA24C42004EF371 /* Particle.hpp */,
-				B8CBB1151DA24C6C004EF371 /* ParticleEmitter.cpp */,
-				B8CBB1161DA24C6C004EF371 /* ParticleEmitter.hpp */,
-				B8CBB1181DA24C76004EF371 /* ColoredParticle.cpp */,
-				B8CBB1191DA24C76004EF371 /* ColoredParticle.hpp */,
+				B8224BBA1DAA5FC700796BBE /* ParticleEmitter.cpp */,
+				B8224BBB1DAA5FC700796BBE /* ParticleEmitter.hpp */,
+				B8224BBD1DAA5FFC00796BBE /* Particle.cpp */,
+				B8224BBE1DAA5FFC00796BBE /* Particle.hpp */,
+				B8224BC01DAA615B00796BBE /* CurvingParticle.cpp */,
+				B8224BC11DAA615B00796BBE /* CurvingParticle.hpp */,
+				B8224BC31DAA641100796BBE /* ParticleReaper.cpp */,
+				B8224BC41DAA641100796BBE /* ParticleReaper.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -225,11 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8CBB11A1DA24C76004EF371 /* ColoredParticle.cpp in Sources */,
-				B8CBB1111DA24C20004EF371 /* CurvingParticle.cpp in Sources */,
-				B8CBB1141DA24C42004EF371 /* Particle.cpp in Sources */,
-				B8CBB1171DA24C6C004EF371 /* ParticleEmitter.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				B8224BC21DAA615B00796BBE /* CurvingParticle.cpp in Sources */,
+				B8224BBF1DAA5FFC00796BBE /* Particle.cpp in Sources */,
+				B8224BBC1DAA5FC700796BBE /* ParticleEmitter.cpp in Sources */,
+				B8224BC51DAA641100796BBE /* ParticleReaper.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +270,7 @@
 					"-D__MACOSX_CORE__",
 					"-mtune=native",
 				);
-				SDKROOT = macosx;
+				SDKROOT = macosx10.11;
 			};
 			name = Debug;
 		};
@@ -299,7 +299,7 @@
 					"-D__MACOSX_CORE__",
 					"-mtune=native",
 				);
-				SDKROOT = macosx;
+				SDKROOT = macosx10.11;
 			};
 			name = Release;
 		};
@@ -323,6 +323,7 @@
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				SDKROOT = macosx10.11;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -346,6 +347,7 @@
 				INSTALL_PATH = /Applications;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.11;
 				WRAPPER_EXTENSION = app;
 				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
 			};

@@ -2,11 +2,11 @@
 
 
 #include "ofMain.h"
-#include "Particle.h"
+#include "Particle.hpp"
 
 class CurvingParticle : public Particle {
 public:
-    CurvingParticle(int startX, int startY);
+    CurvingParticle(int startX, int startY, long lifetime);
     
     void move();
     

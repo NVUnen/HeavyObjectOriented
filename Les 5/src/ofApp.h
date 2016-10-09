@@ -1,10 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
-#include "Particle.h"
+#include "Particle.hpp"
 #include "ParticleEmitter.hpp"
-
-#define MAX_PARTICLES 25
 
 class ofApp : public ofBaseApp {
     

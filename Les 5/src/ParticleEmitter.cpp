@@ -1,15 +1,17 @@
 #include "ParticleEmitter.hpp"
-#include "CurvingParticle.h"
+#include "CurvingParticle.hpp"
 #include "ColoredParticle.hpp"
 
 Particle* ParticleEmitter::emit() {
     Particle* newParticle;
     
     if (ofRandom(1) > (1 - curvingParticleRatio)) {
-        newParticle = new CurvingParticle(originX, originY);
-        newParticle = new ColoredParticle(originX, originY);
+        setLifetime(200);
+        newParticle = new CurvingParticle(originX, originY, time);
+        newParticle = new ColoredParticle(originX, originY, time);
     } else {
-        newParticle = new Particle(originX, originY);
+        setLifetime(200);
+        newParticle = new Particle(originX, originY, time);
     }
     newParticle->setColours(ofColor::white, inner, outer);
     
@@ -28,4 +30,9 @@ void ParticleEmitter::setOrigin(int x, int y) {
 void ParticleEmitter::setColours(ofColor innerColour, ofColor outerColor) {
     inner = innerColour;
     outer = outerColor;
+}
+
+void ParticleEmitter::setLifetime(long time)
+{
+    lifetime = time;
 }
