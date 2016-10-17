@@ -1,9 +1,9 @@
 #include "ofApp.h"
 
 void ofApp::setup() {
-    ofBackground(ofColor::black);
+   ofBackground(ofColor::black);
     
-    emitter1 = ParticleEmitter();
+   /* emitter1 = ParticleEmitter();
     emitter1.setOrigin(100, 100);
     emitter1.setCurvingParticleRatio(0.1);
     emitter1.setColours(ofColor(31, 127, 255, 127), ofColor(128, 255, 255, 15));
@@ -17,28 +17,29 @@ void ofApp::setup() {
     emitter3.setOrigin(400, 400);
     emitter3.setCurvingParticleRatio(2);
     emitter3.setColours(ofColor(100, 200, 59, 90), ofColor(100, 255, 1, 15));
+    */
+    
 }
 
 void ofApp::update() {
-    for (int i = 0; i < particles.size(); ++i) {
+    
+    ParticleEmitter::instance()->normalMethod();
+    
+    for (unsigned int i = 0; i < particles.size(); ++i) {
         particles[i]->move();
-        particle[i]->updateLifetime();
+    
     }
     
-    for (vector<Particle>::iterator i = particles.begin();i != particles.end();i++) {
-        i->move();
-        i->UpdateLifetime();
+    if (ofGetFrameNum() % 5 == 0) {
+        Particle* freshParticle = emitter1.emit();
+        particles.push_back(freshParticle);
+        
+        Particle* freshParticle2 = emitter2.emit();
+        particles.push_back(freshParticle2);
+        
+        Particle* freshParticle3 = emitter3.emit();
+        particles.push_back(freshParticle3);
     }
-    
-    
-    Particle* freshParticle = emitter1.emit();
-    particles.push_back(freshParticle);
-    
-    Particle* freshParticle2 = emitter2.emit();
-    particles.push_back(freshParticle2);
-    
-    Particle* freshParticle3 = emitter3.emit();
-    particles.push_back(freshParticle3);
     
     reaper.cleanup(particles);
     
@@ -49,4 +50,7 @@ void ofApp::draw() {
     for (int i = 0; i < particles.size(); ++i) {
         particles[i]->draw();
     }
+}
+
+void ofApp::keyPressed(int key) {
 }

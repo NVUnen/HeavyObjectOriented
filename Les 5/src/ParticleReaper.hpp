@@ -1,12 +1,12 @@
 
 #pragma once
-#include "ofMain.h"
+#include "Particle.hpp"
 
 class ParticleReaper
 {
     public:
         ParticleReaper();
     
-        void EraseParticle();
+        void cleanup(vector<Particle*>& particles);
 
 };
