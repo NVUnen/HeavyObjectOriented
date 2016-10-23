@@ -18,11 +18,10 @@ public:
     
 private:
     
-    vector<Particle*> particles;
+    //zijn contante waarden die niet veranderen
+    const vector<Particle*> particles;
     
-    static ParticleEmitter emitter1;
-    static ParticleEmitter emitter2;
-    static ParticleEmitter emitter3;
-    
-    ParticleReaper reaper;
+    const ParticleEmitter emitter1;
+    const ParticleEmitter emitter2;
+    const ParticleReaper reaper;
 };

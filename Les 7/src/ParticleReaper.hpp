@@ -6,5 +6,6 @@
 
 class ParticleReaper {
 public:
-    void cleanup(vector<Particle*>& particles);
+    //deze methode werkt met de variabelen die niet in het object zitten
+    void cleanup(vector<Particle*>& particles) const;
 };

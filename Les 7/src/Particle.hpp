@@ -3,17 +3,17 @@
 
 #include "ofMain.h"
 
-#define MAX_LIFETIME 150
-
 class Particle {
 public:
     Particle(int startX, int startY);
-    
     virtual ~Particle();
+    
+    //omdat het een vast waarde heeft
+    const int MAX_LIFETIME  = 150;
     
     virtual void move();
     
-    void draw();
+    void draw ();
     
     void setColours(ofColor center, ofColor inner, ofColor outer);
     

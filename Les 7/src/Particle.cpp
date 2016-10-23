@@ -1,16 +1,18 @@
 #include "Particle.hpp"
 
+
 Particle::Particle(int startX, int startY) {
-    radius = ofRandom(30, 50);
+    radius = ofRandom(2, 20);
     position = ofPoint(startX,
                        startY);
     
     
-    speed = ofVec2f(ofRandom(-5, 5),
-                    ofRandom(-5, 5));
+    speed = ofVec2f(ofRandom(-2, 2),
+                    ofRandom(-2, 2));
     
     innerColour = ofColor(31, 127, 255, 127);
     outerColour = ofColor(128, 255, 255, 15);
+    lifetime = 0;
 }
 
 Particle::~Particle() {

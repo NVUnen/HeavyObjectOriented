@@ -1,25 +1,6 @@
 #include "ParticleEmitter.hpp"
 #include "CurvingParticle.hpp"
 
-
-ParticleEmitter::ParticleEmitter(){
-    
-}
-
-ParticleEmitter* ParticleEmitter::instance(){
-    if(!ParticleEmitter::theOnlyOne){
-        ParticleEmitter::theOnlyOne = new ParticleEmitter();
-    }
-    
-    return ParticleEmitter::theOnlyOne;
-}
-
-ParticleEmitter* ParticleEmitter::theOnlyOne = 0;
-
-void ParticleEmitter::normalMethod(){
-    
-}
-
 Particle* ParticleEmitter::emit() {
     Particle* newParticle;
     
