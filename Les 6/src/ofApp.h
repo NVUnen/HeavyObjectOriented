@@ -13,16 +13,14 @@ public:
     void update();
     
     void draw();
-    
-    void keyPressed(int key);
+
 
 private:
     
     vector<Particle*> particles;
     
-    static ParticleEmitter emitter1;
-    static ParticleEmitter emitter2;
-    static ParticleEmitter emitter3;
+    ParticleEmitter* emitter;
+
     
     ParticleReaper reaper;
 };
