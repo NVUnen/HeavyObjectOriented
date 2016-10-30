@@ -1,6 +1,22 @@
 #include "ParticleEmitter.hpp"
 #include "CurvingParticle.hpp"
 
+
+
+ParticleEmitter* ParticleEmitter::instance(){
+    if(!theOnlyOne){
+        theOnlyOne = new ParticleEmitter();
+    }
+    
+    return theOnlyOne;
+}
+
+ParticleEmitter::ParticleEmitter(){
+    
+}
+
+
+
 Particle* ParticleEmitter::emit() {
     Particle* newParticle;
     
@@ -27,3 +43,5 @@ void ParticleEmitter::setColours(ofColor innerColour, ofColor outerColor) {
     inner = innerColour;
     outer = outerColor;
 }
+
+ParticleEmitter* ParticleEmitter::theOnlyOne = 0;

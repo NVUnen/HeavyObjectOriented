@@ -1,4 +1,3 @@
-
 #pragma once
 
 
@@ -6,6 +5,5 @@
 
 class ParticleReaper {
 public:
-    //deze methode werkt met de variabelen die niet in het object zitten
-    void cleanup(vector<Particle*>& particles) const;
+    void cleanup(vector<Particle*>& particles);
 };
