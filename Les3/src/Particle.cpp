@@ -1,9 +1,9 @@
 #include "Particle.hpp"
 
-Particle::Particle() {
+Particle::Particle(int startX, int startY) {
     radius = ofRandom(10, 50);
-    position = ofPoint(ofGetWidth() / 2,
-                       ofGetHeight() / 2);
+    position = ofPoint(startX,
+                       startY);
     
     
     speed = ofVec2f(ofRandom(-5, 5),
@@ -17,10 +17,6 @@ void Particle::setColours(ofColor center, ofColor inner, ofColor outer) {
     centerColour = center;
     innerColour = inner;
     outerColour = outer;
-}
-
-void Particle::setup() {
-    
 }
 
 void Particle::move() {

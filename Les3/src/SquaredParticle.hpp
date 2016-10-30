@@ -4,13 +4,12 @@
 #include "ofMain.h"
 #include "Particle.hpp"
 
-class squaredParticle : public Particle {
+class SquaredParticle : public Particle {
 public:
     
-    squaredParticle();
+    SquaredParticle(int startX, int startY);
     
     void move();
     
     ofVec2f curve;
-    ofVec2f squared;
 };

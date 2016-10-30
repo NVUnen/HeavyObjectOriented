@@ -2,9 +2,7 @@
 
 #include "ofMain.h"
 #include "Particle.hpp"
-#include "particleEmitter.hpp"
-
-#define MAX_PARTICLES 50
+#include "ParticleEmitter.hpp"
 
 class ofApp : public ofBaseApp {
     
@@ -15,14 +13,8 @@ public:
     
     void draw();
     
-    void keyPressed(int key);
+    vector<Particle*> particles;
     
-    //void setRandomColour(Particle* particle);
-    
-    particleEmitter part1;
-    
-    void particleEmitter();
-    
-private:
-   // Particle* particles[MAX_PARTICLES];
+    ParticleEmitter emitter1;
+    ParticleEmitter emitter2;
 };
