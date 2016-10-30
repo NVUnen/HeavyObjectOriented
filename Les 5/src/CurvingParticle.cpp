@@ -1,6 +1,6 @@
 #include "CurvingParticle.hpp"
 
-CurvingParticle::CurvingParticle(int startX, int startY, long lifetime) : Particle(startX, startY, lifetime) {
+CurvingParticle::CurvingParticle(int startX, int startY) : Particle(startX, startY) {
     curve = ofVec2f(ofRandom(-5, 5),
                     ofRandom(-5, 5));
 }

@@ -6,7 +6,7 @@
 
 class CurvingParticle : public Particle {
 public:
-    CurvingParticle(int startX, int startY, long lifetime);
+    CurvingParticle(int startX, int startY);
     
     void move();
     

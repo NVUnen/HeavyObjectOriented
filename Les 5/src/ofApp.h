@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "Particle.hpp"
 #include "ParticleEmitter.hpp"
+#include "ParticleReaper.hpp"
 
 class ofApp : public ofBaseApp {
     
@@ -18,4 +19,6 @@ public:
     ParticleEmitter emitter1;
     ParticleEmitter emitter2;
     ParticleEmitter emitter3;
+    
+    ParticleReaper reaper;
 };

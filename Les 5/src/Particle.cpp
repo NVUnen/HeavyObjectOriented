@@ -1,11 +1,10 @@
-#include "Particle.h"
+#include "Particle.hpp"
 
-Particle::Particle(int startX, int startY, long lifespan) {
+Particle::Particle(int startX, int startY) {
     radius = ofRandom(30, 50);
     position = ofPoint(startX,
                        startY);
-    
-    lifetime = lifespan;
+
     
     
     speed = ofVec2f(ofRandom(-5, 5),
@@ -13,6 +12,10 @@ Particle::Particle(int startX, int startY, long lifespan) {
     
     innerColour = ofColor(31, 127, 255, 127);
     outerColour = ofColor(128, 255, 255, 15);
+    lifetime = 0;
+}
+
+Particle::~Particle() {
 }
 
 void Particle::setColours(ofColor center, ofColor inner, ofColor outer) {
@@ -23,6 +26,7 @@ void Particle::setColours(ofColor center, ofColor inner, ofColor outer) {
 
 void Particle::move() {
     position += speed;
+    lifetime++;
 }
 
 
@@ -37,10 +41,6 @@ void Particle::draw() {
     ofDrawCircle(position.x, position.y, radius * 0.25);
 }
 
-void Particle::updateLifetime(){
-    lifetime -=1;
-    if(lifetime == 0){
-        cout << "lifetime = 0"
-        
-    }
+bool Particle::isDead() {
+    return lifetime > MAX_LIFETIME;
 }

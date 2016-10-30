@@ -3,16 +3,20 @@
 
 #include "ofMain.h"
 
+#define MAX_LIFETIME 50
+
 class Particle {
 public:
-    Particle(int startX, int startY, long lifespan);
+    Particle(int startX, int startY);
+    virtual ~Particle();
     
     virtual void move();
     
     void draw();
     
     void setColours(ofColor center, ofColor inner, ofColor outer);
-    void updateLifetime();
+    
+    bool isDead();
     
 protected:
     ofPoint position;

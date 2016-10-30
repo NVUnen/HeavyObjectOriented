@@ -22,27 +22,22 @@ void ofApp::setup() {
 void ofApp::update() {
     for (int i = 0; i < particles.size(); ++i) {
         particles[i]->move();
-        particle[i]->updateLifetime();
     }
     
-    for (vector<Particle>::iterator i = particles.begin();i != particles.end();i++) {
-        i->move();
-        i->UpdateLifetime();
+    if (ofGetFrameNum() % 5 == 0) {
+        Particle* freshParticle = emitter1.emit();
+        particles.push_back(freshParticle);
+        
+        Particle* freshParticle2 = emitter2.emit();
+        particles.push_back(freshParticle2);
+        
+        Particle* freshParticle3 = emitter3.emit();
+        particles.push_back(freshParticle3);
     }
-    
-    
-    Particle* freshParticle = emitter1.emit();
-    particles.push_back(freshParticle);
-    
-    Particle* freshParticle2 = emitter2.emit();
-    particles.push_back(freshParticle2);
-    
-    Particle* freshParticle3 = emitter3.emit();
-    particles.push_back(freshParticle3);
     
     reaper.cleanup(particles);
     
-    ofSetWindowTitle("Particles: " + ofToString(particles.size()));
+    ofSetWindowTitle("clean " + ofToString(particles.size()));
 }
 
 void ofApp::draw() {
